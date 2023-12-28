@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kidsapp/models/planet.dart';
 import 'package:kidsapp/screens/planetDetail.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class PlanetsScreen extends StatelessWidget {
   final List<Planet> planets = Planet.getAllPlanets();
@@ -11,6 +12,7 @@ class PlanetsScreen extends StatelessWidget {
         title: Text('Planets'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(

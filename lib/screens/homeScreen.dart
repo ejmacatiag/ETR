@@ -6,6 +6,7 @@ import 'package:kidsapp/screens/colorScreen.dart';
 import 'package:kidsapp/screens/numberScreen.dart';
 import 'package:kidsapp/screens/planetScreen.dart';
 import 'package:kidsapp/screens/quizScreen.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -15,6 +16,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text('E-Kids Explorer'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage('assets/images/bg.jpg'),fit: BoxFit.fill)

@@ -97,6 +97,7 @@ flutter:
     - assets/images/x.jpg
     - assets/images/y.jpg
     - assets/images/z.jpg
+    - 'assets/images/splashScreen.jpg'
     - assets/images/planets/space.jpg
     - assets/images/planets/space2.jpg
     - assets/images/planets/venus.png
@@ -130,34 +131,6 @@ flutter:
     - assets/images/numbers/7.png
     - assets/images/numbers/8.png
     - assets/images/numbers/9.png
-    - assets/sounds/alphabet/kid-a.mp3
-    - assets/sounds/alphabet/kid-b.mp3
-    - assets/sounds/alphabet/kid-c.mp3
-    - assets/sounds/alphabet/kid-d.mp3
-    - assets/sounds/alphabet/kid-e.mp3
-    - assets/sounds/alphabet/kid-f.mp3
-    - assets/sounds/alphabet/kid-g.mp3
-    - assets/sounds/alphabet/kid-h.mp3
-    - assets/sounds/alphabet/kid-i.mp3
-    - assets/sounds/alphabet/kid-j.mp3
-    - assets/sounds/alphabet/kid-k.mp3
-    - assets/sounds/alphabet/kid-l.mp3
-    - assets/sounds/alphabet/kid-m.mp3
-    - assets/sounds/alphabet/kid-n.mp3
-    - assets/sounds/alphabet/kid-o.mp3
-    - assets/sounds/alphabet/kid-p.mp3
-    - assets/sounds/alphabet/kid-q.mp3
-    - assets/sounds/alphabet/kid-r.mp3
-    - assets/sounds/alphabet/kid-s.mp3
-    - assets/sounds/alphabet/kid-t.mp3
-    - assets/sounds/alphabet/kid-u.mp3
-    - assets/sounds/alphabet/kid-v.mp3
-    - assets/sounds/alphabet/kid-w.mp3
-    - assets/sounds/alphabet/kid-x.mp3
-    - assets/sounds/alphabet/kid-y.mp3
-    - assets/sounds/alphabet/kid-z.mp3
-    - assets/sounds/alphabet/kid-a.mp3
-
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

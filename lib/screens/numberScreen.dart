@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class NumbersScreen extends StatelessWidget {
   final List<int> numbers = List.generate(10, (index) => index);
@@ -10,6 +11,7 @@ class NumbersScreen extends StatelessWidget {
         title: Text('Numbers'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage('assets/images/classroom.jpg'), fit: BoxFit.fill),

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:kidsapp/models/color.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class ColorsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rainbow Color List'),
+        title: Text('Rainbow Color'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: ListView.builder(
         itemCount: ColorData.rainbowColors.length,
         itemBuilder: (BuildContext context, int index) {

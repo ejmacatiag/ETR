@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class AlphabetScreen extends StatelessWidget {
   final List<String> alphabet = List.generate(
@@ -11,6 +12,7 @@ class AlphabetScreen extends StatelessWidget {
         title: Text('Alphabet Letters'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       backgroundColor: Colors.white,
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

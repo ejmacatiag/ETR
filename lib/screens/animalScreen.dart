@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kidsapp/models/animal.dart';
 import 'package:kidsapp/screens/animalDetail.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class AnimalsScreen extends StatelessWidget {
   final List<Animal> animals = Animal.getAllAnimals();
@@ -12,11 +13,12 @@ class AnimalsScreen extends StatelessWidget {
         title: Text('Animals'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/images/animals/forest.jpg'), // Replace with your actual background image path
+                'assets/images/animals/forest.jpg'), 
             fit: BoxFit.cover,
           ),
         ),

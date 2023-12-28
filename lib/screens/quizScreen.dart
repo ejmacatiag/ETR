@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:kidsapp/models/quiz.dart';
+import 'package:kidsapp/widgets/navigation.dart';
 
 class QuizScreen extends StatefulWidget {
   @override
@@ -84,6 +85,7 @@ class _QuizScreenState extends State<QuizScreen> {
         title: Text('Quiz'),
         centerTitle: true,
       ),
+      drawer: SideNav(),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
