@@ -1,4 +1,4 @@
-# kidsapp
+# E-kids
 
 A new Flutter project.
 
