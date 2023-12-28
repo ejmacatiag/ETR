@@ -1,5 +1,3 @@
-// color_data.dart
-
 import 'package:flutter/material.dart';
 
 class ColorData {
