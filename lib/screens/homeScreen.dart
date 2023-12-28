@@ -6,6 +6,7 @@ import 'package:kidsapp/screens/colorScreen.dart';
 import 'package:kidsapp/screens/numberScreen.dart';
 import 'package:kidsapp/screens/planetScreen.dart';
 import 'package:kidsapp/screens/quizScreen.dart';
+import 'package:kidsapp/screens/splashScreen.dart';
 import 'package:kidsapp/widgets/navigation.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,11 +16,23 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('E-Kids Explorer'),
         centerTitle: true,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => SplashScreen()),
+              );
+            },
+          ),
+        ],
       ),
       drawer: SideNav(),
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage('assets/images/bg.jpg'),fit: BoxFit.fill)
+          image: DecorationImage(
+              image: AssetImage('assets/images/bg.jpg'), fit: BoxFit.fill),
         ),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
