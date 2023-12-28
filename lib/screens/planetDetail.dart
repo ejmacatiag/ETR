@@ -29,7 +29,7 @@ class PlanetDetailScreen extends StatelessWidget {
                 width: double.infinity,
                 height: 300,
                 decoration: BoxDecoration(
-                  color: Colors.white70, 
+                  color: Colors.white70,
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: ClipRRect(

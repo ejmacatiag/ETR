@@ -8,43 +8,38 @@ class NumbersScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Numbers'),
-        backgroundColor: Colors.lightBlue, 
+        centerTitle: true,
       ),
-      backgroundColor: Color.fromARGB(255, 119, 221, 241),
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 8.0,
-          mainAxisSpacing: 8.0,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage('assets/images/classroom.jpg'), fit: BoxFit.fill),
         ),
-        itemCount: numbers.length,
-        itemBuilder: (context, index) {
-          String imagePath = 'assets/images/numbers/${numbers[index]}.png';
-          String audioPath = 'assets/audio/numbers/${numbers[index]}.mp3';
-
-          return GestureDetector(
-            onTap: () {
-              // audio
-            },
-            child: Padding(
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 8.0,
+            mainAxisSpacing: 8.0,
+          ),
+          itemCount: numbers.length,
+          itemBuilder: (context, index) {
+            String imagePath = 'assets/images/numbers/${numbers[index]}.png';
+            return Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: Image.asset(
-                      imagePath,
-                      width: 150,
-                      height: 150,
-                      fit: BoxFit.contain,
-                    ),
-                  ),
-                ],
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white54, 
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                child: Image.asset(
+                  imagePath,
+                  width: 150,
+                  height: 150,
+                  fit: BoxFit.contain,
+                ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }

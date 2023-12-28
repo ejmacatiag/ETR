@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  gap: ^3.0.1
 
   
 
@@ -68,6 +69,8 @@ flutter:
     - assets/images/no.1.png
     - assets/images/quiz.png
     - assets/images/Planets.png
+    - assets/images/classroom.jpg
+    - assets/images/bg.jpg
     - assets/images/a.jpg
     - assets/images/b.jpg
     - assets/images/c.jpg
@@ -95,6 +98,7 @@ flutter:
     - assets/images/y.jpg
     - assets/images/z.jpg
     - assets/images/planets/space.jpg
+    - assets/images/planets/space2.jpg
     - assets/images/planets/venus.png
     - assets/images/planets/earth.png
     - assets/images/planets/mars.png

@@ -5,7 +5,7 @@ import 'package:kidsapp/screens/animalScreen.dart';
 import 'package:kidsapp/screens/colorScreen.dart';
 import 'package:kidsapp/screens/numberScreen.dart';
 import 'package:kidsapp/screens/planetScreen.dart';
-
+import 'package:kidsapp/screens/quizScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -16,7 +16,9 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        color: Color.fromARGB(255, 201, 237, 248),
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage('assets/images/bg.jpg'),fit: BoxFit.fill)
+        ),
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
@@ -53,16 +55,17 @@ class HomeScreen extends StatelessWidget {
                 } else if (categoryData.name == 'Colors') {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => ColorsScreen()
-                    ),
+                    MaterialPageRoute(builder: (context) => ColorsScreen()),
                   );
                 } else if (categoryData.name == 'Solar System') {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (context) => PlanetsScreen()
-                    ),
+                    MaterialPageRoute(builder: (context) => PlanetsScreen()),
+                  );
+                } else {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => QuizScreen()),
                   );
                 }
               },

@@ -15,7 +15,8 @@ class AnimalsScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/animals/forest.jpg'), // Replace with your actual background image path
+            image: AssetImage(
+                'assets/images/animals/forest.jpg'), // Replace with your actual background image path
             fit: BoxFit.cover,
           ),
         ),
@@ -32,7 +33,8 @@ class AnimalsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => AnimalDetailScreen(animal: animals[index]),
+                    builder: (context) =>
+                        AnimalDetailScreen(animal: animals[index]),
                   ),
                 );
               },
@@ -41,7 +43,7 @@ class AnimalsScreen extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white54,
-                    borderRadius: BorderRadius.circular(20.0), // Adjust the radius as needed
+                    borderRadius: BorderRadius.circular(15.0), 
                   ),
                   child: GridTile(
                     child: Image.asset(
@@ -49,11 +51,11 @@ class AnimalsScreen extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                     footer: GridTileBar(
-                      backgroundColor: Colors.black54,
+                      backgroundColor: Color.fromARGB(150, 0, 0, 0),
                       title: Text(
                         animals[index].name,
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                       ),
                     ),
                   ),

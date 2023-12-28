@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kidsapp/models/planet.dart'; 
+import 'package:kidsapp/models/planet.dart';
 import 'package:kidsapp/screens/planetDetail.dart';
 
-
 class PlanetsScreen extends StatelessWidget {
-  final List<Planet> planets = Planet.getAllPlanets(); 
+  final List<Planet> planets = Planet.getAllPlanets();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +14,8 @@ class PlanetsScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/planets/space.jpg'), // Replace with your actual background image path
+            image: AssetImage(
+                'assets/images/planets/space.jpg'), 
             fit: BoxFit.fill,
           ),
         ),
@@ -32,7 +32,8 @@ class PlanetsScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PlanetDetailScreen(planet: planets[index]),
+                    builder: (context) =>
+                        PlanetDetailScreen(planet: planets[index]),
                   ),
                 );
               },
@@ -41,7 +42,7 @@ class PlanetsScreen extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white54,
-                    borderRadius: BorderRadius.circular(20.0), 
+                    borderRadius: BorderRadius.circular(20.0),
                   ),
                   child: GridTile(
                     child: Image.asset(

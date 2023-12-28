@@ -7,6 +7,7 @@ class ColorsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Rainbow Color List'),
+        centerTitle: true,
       ),
       body: ListView.builder(
         itemCount: ColorData.rainbowColors.length,
@@ -16,10 +17,13 @@ class ColorsScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: ListTile(
-                contentPadding: EdgeInsets.all(12.7), // Adjust the padding as needed
+                contentPadding:
+                    EdgeInsets.all(14.2),
                 title: Text(
                   ColorData.colorNames[index],
-                  style: TextStyle(color: Colors.white,),
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),

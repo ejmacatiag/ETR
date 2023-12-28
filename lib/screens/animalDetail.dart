@@ -16,7 +16,7 @@ class AnimalDetailScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/animals/forest.jpg'), 
+            image: AssetImage('assets/images/animals/forest.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -35,7 +35,8 @@ class AnimalDetailScreen extends StatelessWidget {
               Container(
                 padding: EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.8), // Adjust opacity as needed
+                  color:
+                      Colors.white.withOpacity(0.8), // Adjust opacity as needed
                   borderRadius: BorderRadius.circular(12.0),
                   boxShadow: [
                     BoxShadow(
